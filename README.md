@@ -12,7 +12,9 @@ Paused / Playing:
 
 ## Getting started
 Install [font-awesome](https://fortawesome.github.io/Font-Awesome/)
+
 Install soco using `pip install soco`
+
 Copy the blocklet configuration in the given `i3blocks.conf` (or below) into your i3blocks configuration file
 ```INI
 [sonos]
