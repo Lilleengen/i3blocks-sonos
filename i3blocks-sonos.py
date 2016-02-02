@@ -12,9 +12,19 @@ if len(speakers) > 0:
     state = speakers[0].get_current_transport_info()['current_transport_state']
 
     if state == 'PLAYING':
-        if len(sys.argv) > 1 and sys.argv[1] == "1":
-            speakers[0].stop()
-            print("")
+        if len(sys.argv) > 1:
+            if sys.argv[1] == "1":
+                speakers[0].stop()
+                print("")
+            elif sys.argv[1] == "2":
+                try:
+                    speakers[0].next()
+                except soco.exceptions.SoCoUPnPException:
+                    track = speakers[0].get_current_track_info()
+                    print(" " + track['title'] + " - " + track['artist'])
+                else:
+                    track = speakers[0].get_current_track_info()
+                    print(" " + track['title'] + " - " + track['artist'])
         else:
             track = speakers[0].get_current_track_info()
             print(" " + track['title'] + " - " + track['artist'])

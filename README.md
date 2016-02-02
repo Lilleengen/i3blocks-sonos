@@ -1,7 +1,12 @@
 # i3blocks-sonos
 
 ## About
-i3blocks-sonos is an i3blocks blocklet script to output the status and current song playing on your Sonos and to toggle playing.
+i3blocks-sonos is an i3blocks blocklet script to:
+* Output the status (playing/stopped) of your Sonos
+* Current song playing if any on your Sonos
+* Toggle playing/stopped on your Sonos
+* Skip to next song on your Sonos
+
 
 ## Dependencies
 fonts-font-awesome, soco, python3
@@ -24,4 +29,5 @@ interval=5
 ```
 
 ## Usage
-Press it to toggle playing
+Left-click it to toggle playing
+Right-click to skip to next song
