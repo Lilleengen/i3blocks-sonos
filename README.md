@@ -30,4 +30,5 @@ interval=5
 
 ## Usage
 Left-click it to toggle playing
+
 Right-click to skip to next song
